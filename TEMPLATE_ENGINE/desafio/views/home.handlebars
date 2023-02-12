@@ -1,0 +1,12 @@
+<ul>
+    {{#each products}}
+        {{#with this}}
+            <li>
+                <h1>Descrição: {{description}}</h1>
+                <p>Valor: {{value}}</p>
+                <p>Cor: {{color}}</p>
+                <p><a href="/product/{{id}}">Veja mais</a></p>
+            </li>
+        {{/with}}
+    {{/each}}
+</ul>
